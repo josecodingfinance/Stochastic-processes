@@ -1,24 +1,24 @@
 # Stochastic-processes
-University assesments related to Stochastic processes, random walks, Markov chains and many more simulations.
+University assessments related to stochastic processes, random walks, Markov chains, and many more simulations.
 
-# Simulación y Análisis del Paseo Aleatorio Simple (PAS)
+# Simulation and Analysis of the Simple Random Walk (SRW)
 
-Este repositorio contiene la implementación y el análisis visual de un **Paseo Aleatorio Simple (PAS)** en tiempo discreto, desarrollado en Python utilizando `NumPy` y `Matplotlib`. El objetivo principal es modelizar trayectorias estocásticas y comprobar empíricamente las propiedades matemáticas fundamentales del proceso.
+This repository contains the implementation and visual analysis of a discrete-time **Simple Random Walk (SRW)**, developed in Python using `NumPy` and `Matplotlib`. The main objective is to model stochastic trajectories and empirically verify the fundamental mathematical properties of the process.
 
-## Características del proyecto
+## Project Features
 
-* **Vectorización eficiente:** La función núcleo `simular_PAS` ha sido diseñada evitando el uso de bucles `for` explícitos. Utiliza matrices multidimensionales y operaciones por ejes de NumPy (`np.random.choice`, `np.cumsum`) para generar miles de trayectorias de forma rápida y eficiente computacionalmente.
-* **Flexibilidad Paramétrica:** Permite ajustar la probabilidad de éxito (p), el número de pasos (n) y el número de simulaciones independientes (reps), modelando tanto paseos simétricos como aquellos con tendencia (drift).
+* **Efficient Vectorization:** The core function `simular_PAS` is designed to avoid explicit `for` loops. It leverages multidimensional arrays and NumPy axis operations (`np.random.choice`, `np.cumsum`) to generate thousands of trajectories in a fast and computationally efficient manner.
+* **Parametric Flexibility:** It allows adjusting the probability of success (p), the number of steps (n), and the number of independent simulations (reps), modeling both symmetric walks and those with a drift.
 
-## Visualizaciones incluidas
+## Included Visualizations
 
-El cuaderno reproduce las siguientes situaciones teóricas:
+The notebook reproduces the following theoretical scenarios:
 
-1. **Exploración de Tendencias (Visualización 1):** Comparativa de trayectorias individuales bajo diferentes probabilidades (p=0.5, 0.6, 0.4), mostrando cómo el parámetro afecta el "drift" del paseo.
-2. **Cotas Teóricas y Desigualdad de Chebyshev (Visualización 2):** Se grafican múltiples trayectorias superponiendo la **media teórica** y las **bandas de dispersión** de 1 y 2 desviaciones típicas. Esto permite verificar visualmente que la mayoría de los caminos se mantienen dentro de los límites probabilísticos esperados.
-3. **Ley de los Grandes Números (Visualización 3):** Análisis de convergencia comparando la media teórica con la media empírica. Se demuestra cómo, al promediar un número creciente de trayectorias (de 5 a 1000), el resultado converge hacia la función de medias teórica.
+1. **Drift Exploration (Visualization 1):** Comparison of individual trajectories under different probabilities (p=0.5, 0.6, 0.4), showing how the parameter affects the drift of the walk.
+2. **Theoretical Bounds and Chebyshev's Inequality (Visualization 2):** Multiple trajectories are plotted, superimposing the **theoretical mean** and the **dispersion bands** of 1 and 2 standard deviations. This allows for visual verification that most paths remain within the expected probabilistic limits.
+3. **Law of Large Numbers (Visualization 3):** Convergence analysis comparing the theoretical mean with the empirical mean. It demonstrates how, by averaging an increasing number of trajectories (from 5 to 1000), the result converges towards the theoretical mean function.
 
-## Tecnologías utilizadas
+## Technologies Used
 * Python 3
-* NumPy (Generación de matrices aleatorias y cálculo matricial)
-* Matplotlib (Visualización de series temporales y áreas de confianza)
+* NumPy (Random array generation and matrix computations)
+* Matplotlib (Time series visualization and confidence areas)
