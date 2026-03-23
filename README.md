@@ -7,7 +7,7 @@ Este repositorio contiene la implementación y el análisis visual de un **Paseo
 
 ## Características del Proyecto
 
-* **Vectorización Eficiente:** La función núcleo `simular_PAS` ha sido diseñada evitando el uso de bucles `for` explícitos. Utiliza matrices multidimensionales y operaciones por ejes de NumPy (`np.random.choice`, `np.cumsum`) para generar miles de trayectorias de forma rápida y eficiente computacionalmente.
+* **Vectorización eficiente:** La función núcleo `simular_PAS` ha sido diseñada evitando el uso de bucles `for` explícitos. Utiliza matrices multidimensionales y operaciones por ejes de NumPy (`np.random.choice`, `np.cumsum`) para generar miles de trayectorias de forma rápida y eficiente computacionalmente.
 * **Flexibilidad Paramétrica:** Permite ajustar la probabilidad de éxito (p), el número de pasos (n) y el número de simulaciones independientes (reps), modelando tanto paseos simétricos como aquellos con tendencia (drift).
 
 ## Visualizaciones Incluidas
